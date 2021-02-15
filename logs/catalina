@@ -34,3 +34,435 @@ INFO : Java Home:		E:\program_software\jdk14
 INFO : JVM Version:		14+36-1461
 02 15, 2021 18:09:15 下午 com.go.diytomcat.Bootstrap logJVM
 INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:32:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:32:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:32:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:32:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:32:28 下午 com.go.diytomcat.Bootstrap error
+ERROR: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:479)
+	at java.base/sun.nio.ch.Net.bind(Net.java:468)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:173)
+	at com.go.diytomcat.Bootstrap.main(Bootstrap.java:36)
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:32:53 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:32:53 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:32:53 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:32:53 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:32:53 下午 com.go.diytomcat.Bootstrap error
+ERROR: Address already in use: bind
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:479)
+	at java.base/sun.nio.ch.Net.bind(Net.java:468)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:396)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:282)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:173)
+	at com.go.diytomcat.Bootstrap.main(Bootstrap.java:36)
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:33:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:33:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:33:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:33:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:33:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:50:20 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 1 ms
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:50:20 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:50:21 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 20:50:21 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 2 ms
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:51:01 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 20:51:01 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 0 ms
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:52:00 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:55:38 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:55:50 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 20:55:50 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 16 ms
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:56:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:56:27 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 20:57:05 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 20:57:05 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 7 ms
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 20:59:54 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 20:59:59 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:00:03 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 21:00:03 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 15 ms
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 21:09:18 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 21:09:28 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 21:09:29 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 21:09:32 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 0 ms
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 21:14:26 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps
+02 15, 2021 21:14:29 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps has finished in 0 ms
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 21:48:37 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 21:48:41 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server version:		How2J DiyTomcat/1.0.1
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server built:		2020-04-08 10:20:22
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Server number:		1.0.1
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : Java Home:		E:\program_software\jdk14
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Version:		14+36-1461
+02 15, 2021 21:49:25 下午 com.go.diytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\b
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\b has finished in 0 ms
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\NEW_APP has finished in 0 ms
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:\CodeSpace\diytomcat\webapps\ROOT
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:\CodeSpace\diytomcat\webapps\ROOT has finished in 0 ms
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deploying web application directory E:/CodeSpace/diytomcat/webapps/b
+02 15, 2021 21:49:25 下午 com.go.diytomcat.catalina.Context <init>
+INFO : Deployment of web application directory E:/CodeSpace/diytomcat/webapps/b has finished in 0 ms
