@@ -3,13 +3,13 @@ package com.go.diytomcat;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
-import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import com.go.diytomcat.constant.Constant;
 import com.go.diytomcat.http.Request;
 import com.go.diytomcat.http.Response;
+import com.go.diytomcat.util.ThreadPoolUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,37 +36,47 @@ public class Bootstrap {
 
             while (true) {
                 Socket s = ss.accept();
-                // request对象
-                Request request = new Request(s);
-                System.out.println("浏览器的输入信息： \r\n" + request.getRequestString());
-                String uri = request.getUri();
-                Response response = new Response();
-                if (uri == null) {
-                    continue;
-                }
-                System.out.println("uri:" + request.getUri());
-                if ("/".equals(uri)) {
-                    String html = "Hello DIY Tomcat from how2j.cn";
-                    response.getWriter().println(html);// 这里会把html给放到response的StringWriter里
-                } else {
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(Constant.rootFolder,fileName);
-                    if(file.exists()){
-                        String fileContent = FileUtil.readUtf8String(file);
-                        response.getWriter().println(fileContent);
+                Runnable r = new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Request request = new Request(s);
+                            System.out.println("浏览器的输入信息： \r\n" + request.getRequestString());
+                            String uri = request.getUri();
+                            Response response = new Response();
+                            if (uri == null) {
+                                return;
+                            }
+                            System.out.println("uri:" + request.getUri());
+                            if ("/".equals(uri)) {
+                                String html = "Hello DIY Tomcat from how2j.cn";
+                                response.getWriter().println(html);// 这里会把html给放到response的StringWriter里
+                            } else {
+                                String fileName = StrUtil.removePrefix(uri, "/");
+                                File file = FileUtil.file(Constant.rootFolder,fileName);
+                                if(file.exists()){
+                                    String fileContent = FileUtil.readUtf8String(file);
+                                    response.getWriter().println(fileContent);
 
-                        if(fileName.equals("timeConsume.html")){
-                            ThreadUtil.sleep(1000);
+                                    if(fileName.equals("timeConsume.html")){
+                                        ThreadUtil.sleep(1000);
+                                    }
+                                }
+                                else{
+                                    response.getWriter().println("File Not Found");
+                                }
+                            }
+                            handle200(s, response);
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
                         }
                     }
-                    else{
-                        response.getWriter().println("File Not Found");
-                    }
-                }
-
-                handle200(s, response);
+                };
+                ThreadPoolUtil.run(r);
             }
         } catch (IOException e) {
+            LogFactory.get().error(e);
             e.printStackTrace();
         }
 
