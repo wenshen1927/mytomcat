@@ -7,6 +7,8 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
 import com.go.diytomcat.catalina.Context;
+import com.go.diytomcat.catalina.Engine;
+import com.go.diytomcat.catalina.Host;
 import com.go.diytomcat.constant.Constant;
 import com.go.diytomcat.http.Request;
 import com.go.diytomcat.http.Response;
@@ -26,12 +28,8 @@ public class Bootstrap {
     public static void main(String[] args) {
         try {
             logJVM();
-
-            scanContextsOnWebAppsFolder();
-            scanContextsInServerXML();
-
+            Engine engine = new Engine();
             int port = 18080;
-
             ServerSocket ss = new ServerSocket(port);
 
             while(true) {
@@ -40,7 +38,7 @@ public class Bootstrap {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(s);
+                            Request request = new Request(s,engine);
                             Response response = new Response();
                             String uri = request.getUri();
                             if(null==uri)
