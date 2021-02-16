@@ -6,9 +6,7 @@ import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
-import com.go.diytomcat.catalina.Context;
-import com.go.diytomcat.catalina.Engine;
-import com.go.diytomcat.catalina.Host;
+import com.go.diytomcat.catalina.*;
 import com.go.diytomcat.constant.Constant;
 import com.go.diytomcat.http.Request;
 import com.go.diytomcat.http.Response;
@@ -26,61 +24,8 @@ public class Bootstrap {
     public static Map<String, Context> contextMap = new HashMap<>();
 
     public static void main(String[] args) {
-        try {
-            logJVM();
-            Engine engine = new Engine();
-            int port = 18080;
-            ServerSocket ss = new ServerSocket(port);
-
-            while(true) {
-                Socket s =  ss.accept();
-                Runnable r = new Runnable(){
-                    @Override
-                    public void run() {
-                        try {
-                            Request request = new Request(s,engine);
-                            Response response = new Response();
-                            String uri = request.getUri();
-                            if(null==uri)
-                                return;
-                            System.out.println("uri:"+uri);
-                            Context context = request.getContext();
-
-                            if("/".equals(uri)){
-                                String html = "Hello DIY Tomcat from how2j.cn";
-                                response.getWriter().println(html);
-                            }
-                            else{
-                                String fileName = StrUtil.removePrefix(uri, "/");
-                                File file = FileUtil.file(context.getDocBase(),fileName);
-                                if(file.exists()){
-                                    String fileContent = FileUtil.readUtf8String(file);
-                                    response.getWriter().println(fileContent);
-
-                                    if(fileName.equals("timeConsume.html")){
-                                        ThreadUtil.sleep(1000);
-                                    }
-
-                                }
-                                else{
-                                    response.getWriter().println("File Not Found");
-                                }
-                            }
-                            handle200(s, response);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                };
-
-                ThreadPoolUtil.run(r);
-
-            }
-        } catch (IOException e) {
-            LogFactory.get().error(e);
-            e.printStackTrace();
-        }
-
+        Server server = new Server();
+        server.start();
     }
 
     private static void scanContextsInServerXML() {
@@ -113,13 +58,13 @@ public class Bootstrap {
             path = "/" + path;
 
         String docBase = folder.getAbsolutePath();
-        Context context = new Context(path,docBase);
+        Context context = new Context(path, docBase);
 
         contextMap.put(context.getPath(), context);
     }
 
     private static void logJVM() {
-        Map<String,String> infos = new LinkedHashMap<>();
+        Map<String, String> infos = new LinkedHashMap<>();
         infos.put("Server version", "How2J DiyTomcat/1.0.1");
         infos.put("Server built", "2020-04-08 10:20:22");
         infos.put("Server number", "1.0.1");
@@ -132,7 +77,7 @@ public class Bootstrap {
 
         Set<String> keys = infos.keySet();
         for (String key : keys) {
-            LogFactory.get().info(key+":\t\t" + infos.get(key));
+            LogFactory.get().info(key + ":\t\t" + infos.get(key));
         }
     }
 

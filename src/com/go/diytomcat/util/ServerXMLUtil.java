@@ -29,25 +29,27 @@ public class ServerXMLUtil {
         return result;
     }
 
-    public static String getHostName() {
-        String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
-        Document d = Jsoup.parse(xml);
-
-        Element host = d.select("Host").first();
-        return host.attr("name");
-    }
-
     public static String getEngineDefaultHost() {
         String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
         Document d = Jsoup.parse(xml);
+
         Element host = d.select("Engine").first();
         return host.attr("defaultHost");
+    }
+
+    public static String getServiceName() {
+        String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
+        Document d = Jsoup.parse(xml);
+
+        Element host = d.select("Service").first();
+        return host.attr("name");
     }
 
     public static List<Host> getHosts(Engine engine) {
         List<Host> result = new ArrayList<>();
         String xml = FileUtil.readUtf8String(Constant.serverXmlFile);
         Document d = Jsoup.parse(xml);
+
         Elements es = d.select("Host");
         for (Element e : es) {
             String name = e.attr("name");

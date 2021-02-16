@@ -3,6 +3,7 @@ package com.go.diytomcat.http;
 import cn.hutool.core.util.StrUtil;
 import com.go.diytomcat.catalina.Context;
 import com.go.diytomcat.catalina.Engine;
+import com.go.diytomcat.catalina.Service;
 import com.go.diytomcat.util.MiniBrowser;
 
 import java.io.IOException;
@@ -15,10 +16,10 @@ public class Request {
     private String uri;
     private Socket socket;
     private Context context;
-    private Engine engine;
-    public Request(Socket socket, Engine engine) throws IOException {
+    private Service service;
+    public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
-        this.engine = engine;
+        this.service = service;
         parseHttpRequest();
         if(StrUtil.isEmpty(requestString))
             return;
@@ -36,6 +37,7 @@ public class Request {
         else
             path = "/" + path;
 
+        Engine engine = service.getEngine();
         context = engine.getDefaultHost().getContext(path);
         if (null == context)
             context = engine.getDefaultHost().getContext("/");
