@@ -3,6 +3,7 @@ package com.gp.diytomcat.test;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
 import com.go.diytomcat.util.MiniBrowser;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 
 public class BaseTest {
@@ -25,5 +26,16 @@ public class BaseTest {
         System.out.println("request url:"+url);
         String content = MiniBrowser.getContentString(url);
         return content;
+    }
+
+    protected String getHttpString(String uri) {
+        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        String http = MiniBrowser.getHttpString(url);
+        return http;
+    }
+
+    protected void containAssert(String html, String string) {
+        boolean match = StrUtil.containsAny(html, string);
+        Assert.assertTrue(match);
     }
 }

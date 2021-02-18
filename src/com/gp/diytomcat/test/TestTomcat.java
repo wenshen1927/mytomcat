@@ -21,5 +21,16 @@ public class TestTomcat extends BaseTest {
         Assert.assertEquals(html,"Hello DIY Tomcat from a.html");
     }
 
+    @Test
+    public void test404() {
+        String response  = getHttpString("/not_exist.html");
+        containAssert(response, "HTTP/1.1 404 Not Found");
+    }
+
+    @Test
+    public void test500() {
+        String response  = getHttpString("/500.html");
+        containAssert(response, "HTTP/1.1 500 Internal Server Error");
+    }
 
 }

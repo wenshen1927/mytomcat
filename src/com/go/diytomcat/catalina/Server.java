@@ -16,14 +16,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
 public class Server {
     private Service service;
-
-    public Server() {
+    public Server(){
         this.service = new Service(this);
     }
 
@@ -52,6 +52,10 @@ public class Server {
 
                             Context context = request.getContext();
 
+                            if("/500.html".equals(uri)){
+                                throw new Exception("this is a deliberately created exception");
+                            }
+
                             if("/".equals(uri)){
                                 String html = "Hello DIY Tomcat from how2j.cn";
                                 response.getWriter().println(html);
@@ -69,12 +73,22 @@ public class Server {
 
                                 }
                                 else{
-                                    response.getWriter().println("File Not Found");
+                                    handle404(s, uri);
+                                    return;
                                 }
                             }
                             handle200(s, response);
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                        } catch (Exception e) {
+                            LogFactory.get().error(e);
+                            handle500(s,e);
+                        }
+                        finally{
+                            try {
+                                if(!s.isClosed())
+                                    s.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 };
@@ -119,6 +133,40 @@ public class Server {
 
         OutputStream os = s.getOutputStream();
         os.write(responseBytes);
-        s.close();
+    }
+
+    protected void handle404(Socket s, String uri) throws IOException {
+        OutputStream os = s.getOutputStream();
+        String responseText = StrUtil.format(Constant.textFormat_404, uri, uri);
+        responseText = Constant.response_head_404 + responseText;
+        byte[] responseByte = responseText.getBytes("utf-8");
+        os.write(responseByte);
+    }
+
+    protected void handle500(Socket s, Exception e) {
+        try {
+            OutputStream os = s.getOutputStream();
+            StackTraceElement stes[] = e.getStackTrace();
+            StringBuffer sb = new StringBuffer();
+            sb.append(e.toString());
+            sb.append("\r\n");
+            for (StackTraceElement ste : stes) {
+                sb.append("\t");
+                sb.append(ste.toString());
+                sb.append("\r\n");
+            }
+
+            String msg = e.getMessage();
+
+            if (null != msg && msg.length() > 20)
+                msg = msg.substring(0, 19);
+
+            String text = StrUtil.format(Constant.textFormat_500, msg, e.toString(), sb.toString());
+            text = Constant.response_head_500 + text;
+            byte[] responseBytes = text.getBytes("utf-8");
+            os.write(responseBytes);
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
     }
 }
